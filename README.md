@@ -1,10 +1,13 @@
 CLI Table
 =========
 
+![Screenshot](http://i.imgur.com/sYq4T.png)
+
 This utility allows you to render unicode-aided tables on the command line from
 your node.js scripts.
 
-![Screenshot](http://i.imgur.com/sYq4T.png)
+[![Build Status](https://travis-ci.org/Leask/cli-table.png)](https://travis-ci.org/Leask/cli-table)
+[![Dependency Status](https://gemnasium.com/Leask/cli-table.png)](https://gemnasium.com/Leask/cli-table)
 
 ## Features
 
@@ -19,7 +22,7 @@ your node.js scripts.
 
 ## Installation
 
-```bash    
+```bash
 npm install cli-table
 ```
 
@@ -84,9 +87,14 @@ $ make test
 
 ## Credits
 
-- Guillermo Rauch &lt;guillermo@learnboost.com&gt; ([Guille](http://github.com/guille))
+- Guillermo Rauch &lt;guillermo@learnboost.com&gt; ([Guille](https://github.com/guille))
 
-## License 
+## Contributors
+
+- Sonny Michaud &lt;michaud.sonny@gmail.com&gt; ([Sonnym](https://github.com/sonnym))
+- Leask Wong &lt;i@leaskh.com&gt; ([Leask](https://github.com/Leask))
+
+## License
 
 (The MIT License)
 
