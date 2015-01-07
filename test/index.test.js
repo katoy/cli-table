@@ -143,5 +143,40 @@ module.exports = {
     ];
 
     table.toString().should.eql(expected.join("\n"));
+  },
+
+  'test table with KANJI': function (){
+    var table = new Table({
+	head: ['Rel', 'Change', 'By', 'あいうえお']
+      , style: {
+	  'padding-left': 1
+        , 'padding-right': 1
+        , head: []
+        , border: []
+      }
+    , colWidths: [6, 21, 25, 17]
+    });
+
+    table.push(
+	['v0.1', 'Testing something cool', 'rauchg@gmail.com', '7 minutes ago']
+      , ['ｖ．０．１', 'Testing something cool', 'rauchg@gmail.com', '8 minutes ago']
+      , ['v0.1', 'Testing something cool', '加藤洋一', '８分前']
+    );
+
+    var expected = [
+	  '┌──────┬─────────────────────┬─────────────────────────┬─────────────────┐'
+	, '│ Rel  │ Change              │ By                      │ あいうえお      │'
+	, '├──────┼─────────────────────┼─────────────────────────┼─────────────────┤'
+	, '│ v0.1 │ Testing something … │ rauchg@gmail.com        │ 7 minutes ago   │'
+	, '├──────┼─────────────────────┼─────────────────────────┼─────────────────┤'
+	, '│ ｖ…  │ Testing something … │ rauchg@gmail.com        │ 8 minutes ago   │'
+	, '├──────┼─────────────────────┼─────────────────────────┼─────────────────┤'
+	, '│ v0.1 │ Testing something … │ 加藤洋一                │ ８分前          │'
+	, '└──────┴─────────────────────┴─────────────────────────┴─────────────────┘'
+    ];
+
+    table.toString().should.eql(expected.join("\n"));
+    // console.log(table.toString())
   }
+
 };
