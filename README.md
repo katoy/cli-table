@@ -7,7 +7,7 @@ This utility allows you to render unicode-aided tables on the command line from
 your node.js scripts.
 
 [![Build Status](https://travis-ci.org/katoy/cli-table.png)](https://travis-ci.org/katoy/cli-table)
-[![Dependency Status](https://gemnasium.com/katoy/cli-table.png)](https://gemnasium.com/katoy/cli-table)
+[![Dependency Status](https://gemnasium.com/katoy/cli-table.png)](https://gemnasium.com/katoy/cli-table) [![Greenkeeper badge](https://badges.greenkeeper.io/katoy/cli-table.svg)](https://greenkeeper.io/)
 
 ## Features
 
